@@ -27,3 +27,7 @@ npm run dev
 ```sh
 npm run build
 ```
+// this APIKEY dosen't work cuz need to pay on openweather.org 3.0
+//   https://api.openweathermap.org/data/3.0/onecall?lat=${route.query.lat}&lon=${route.query.lng}&exclude={part}&appid=[your APIKEY]&units=imperial`
+
+// so i will use a reusable APIKEY from a youtuber and version 2.5 of open Weather
