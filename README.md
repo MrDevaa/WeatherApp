@@ -30,3 +30,6 @@ npm run build
 // this APIKEY dosen't work cuz need to pay on openweather.org 3.0
 //   https://api.openweathermap.org/data/3.0/onecall?lat=${route.query.lat}&lon=${route.query.lng}&exclude={part}&appid=[your APIKEY]&units=imperial`
 
+  //flicker delay
+        await new Promise((res) => setTimeout(res, 1000)); 
+
