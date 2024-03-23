@@ -1,6 +1,6 @@
 <template>
     <header class="sticky top-0 bg-weather-primary shadow-lg">
-        <nav class="container flex felx-col sm:flex-row items-center gap-4 text-white py-6">
+        <nav class="container flex flex-col sm:flex-row items-center gap-4 text-white py-6">
 
             <RouterLink :to="{ name: 'home'}">
             <div class="flex items-center gap-3 ">
@@ -23,7 +23,7 @@
                 <div class="text-black">
           <h1 class="text-2xl mb-1">About:</h1>
           <p class="mb-4">
-            The Local Weather allows you to track the current and
+            The Weather io allows you to track the current and
             future weather of cities of your choosing.
           </p>
           <h2 class="text-2xl">How it works:</h2>
@@ -66,11 +66,11 @@ const savedCities = ref([]);
 const route = useRoute();
 const router = useRouter();
 
-
 // add city
 const addCity = () => {
-  if (localStorage.getItem('savedCities')) {
-    savedCities.value = JSON.parse(localStorage.getItem('savedCities'));
+  if (localStorage.getItem("savedCities")) {
+    savedCities.value = JSON.parse(localStorage.getItem("savedCities")
+    );
   }
 
   const locationObj = {
@@ -92,10 +92,12 @@ const addCity = () => {
 
     let query = Object.assign({}, route.query);
     delete query.preview;
+    query.id = locationObj.id;
     router.replace({ query });
 
 };
 
+//Modal Active infos
 const modalActive = ref(null);
 const toggleModal = () => {
     modalActive.value = !modalActive.value;
