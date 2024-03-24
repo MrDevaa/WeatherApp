@@ -101,8 +101,6 @@ const getSearchResults = () => {
 
         searchError.value = true;
       }
-
-
           return;
         } 
         mapboxSearchResults.value = null;
