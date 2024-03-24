@@ -33,3 +33,18 @@ npm run build
   //flicker delay
         await new Promise((res) => setTimeout(res, 1000)); 
 
+
+        https://openweathermap.org/api/one-call-3
+
+        https://account.mapbox.com/
+
+
+https://docs.mapbox.com/api/search/geocoding/
+
+
+https://vuejs.org/guide/built-ins/suspense.html#suspense
+
+https://fontawesome.com/search
+
+
+
