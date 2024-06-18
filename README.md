@@ -1,50 +1,47 @@
-# vue-project
+# Projet Vue Template
 
-This template should help get you started developing with Vue 3 in Vite.
+Ce modèle vous aide à démarrer le développement avec Vue 3 en utilisant Vite.
 
-## Recommended IDE Setup
+## Configuration IDE Recommandée
+Pour une meilleure expérience de développement, nous recommandons d'utiliser :
+- **VSCode** avec l'extension **Volar** (et désactiver Vetur).
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Personnalisation de la Configuration
+Pour des options de configuration détaillées, consultez la [Référence de Configuration Vite](https://vitejs.dev/config/).
 
-## Customize configuration
+## Installation du Projet
+Commencez par installer les dépendances :
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## npm install
 
-## Project Setup
+### Compilation et Rechargement à Chaud pour le Développement
+Pour démarrer un serveur de développement local avec rechargement à chaud :
 
-```sh
-npm install
-```
+## npm run dev
 
-### Compile and Hot-Reload for Development
+### Compilation et Minification pour la Production
+Pour déployer votre projet en production :
 
-```sh
-npm run dev
-```
+## npm run build
 
-### Compile and Minify for Production
+## Utilisation des API
+### API Météo
+Pour récupérer les données météorologiques, vous avez besoin d'une clé API de [OpenWeather](https://openweathermap.org/api/one-call-api).
 
-```sh
-npm run build
-```
-// this APIKEY dosen't work cuz need to pay on openweather.org 3.0
-//   https://api.openweathermap.org/data/3.0/onecall?lat=${route.query.lat}&lon=${route.query.lng}&exclude={part}&appid=[your APIKEY]&units=imperial`
+Exemple d'utilisation de l'API :
+```javascript
+// Exemple d'utilisation de l'API OpenWeatherMap
+const apiKey = 'votre_clé_api_ici';
+const apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid=${apiKey}&units=metric`;
+fetch(apiUrl)
+  .then(response => response.json())
+  .then(data => console.log(data));
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+## API Cartographie
+Pour la géocodification et les cartes, vous aurez besoin d'une clé API de Mapbox.
 
-  //flicker delay
-        await new Promise((res) => setTimeout(res, 1000)); 
-
-
-        https://openweathermap.org/api/one-call-3
-
-        https://account.mapbox.com/
-
-
-https://docs.mapbox.com/api/search/geocoding/
-
-
-https://vuejs.org/guide/built-ins/suspense.html#suspense
-
-https://fontawesome.com/search
-
-
-
+Ressources Supplémentaires
+Documentation de l'API OpenWeatherMap
+Documentation de l'API Mapbox
+Guide Vue Suspense
+Icônes Font Awesome
