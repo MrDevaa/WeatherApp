@@ -1,4 +1,4 @@
-# Projet Vue Template
+# Projet Vue WeatherApp
 
 Ce modèle vous aide à démarrer le développement avec Vue 3 en utilisant Vite.
 
