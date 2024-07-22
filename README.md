@@ -1,4 +1,4 @@
-# Projet Vue WeatherApp est en cours de développement.
+## Projet Vue WeatherApp est en cours de développement.
 
 Ce modèle vous aide à démarrer le développement avec Vue 3 en utilisant Vite.
 
