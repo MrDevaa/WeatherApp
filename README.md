@@ -1,6 +1,5 @@
 ## Projet Vue WeatherApp est en cours de développement.
-## check Issue
-## do Kanban board
+
 
 Ce modèle vous aide à démarrer le développement avec Vue 3 en utilisant Vite.
 
