@@ -46,3 +46,4 @@ Documentation de l'API OpenWeatherMap
 Documentation de l'API Mapbox
 Guide Vue Suspense
 Icônes Font Awesome
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
